@@ -1,0 +1,892 @@
+/* GENERAL CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Enables smooth scrolling for anchor links */
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #555;
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+.subheading {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 0.75px;
+}
+
+.mg-btm {
+    margin-bottom: 3rem !important;
+}
+
+/* HEADINGS */
+
+.heading-primary {
+    font-size: 2.8rem;
+    line-height: 1.05;
+    margin-bottom: 2rem;
+}
+
+.heading-secondary {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+}
+
+.heading-tertiary {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.logo {
+    height: 1.4rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* Diffrent Grid-systems for diffrents parts of Display */
+.grid-system-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 6rem;
+    align-items: center;
+}
+
+.grid-system-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    row-gap: 6rem;
+    align-items: center;
+}
+
+.grid-system-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.8rem;
+    row-gap: 5rem;
+    align-items: center;
+}
+
+.icon-inner,
+.ionicon,
+svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* HEADER PORTION  */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+    height: 5.5rem;
+    padding: 0 3rem;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    /* Ensure it appears above other elements */
+    transition: position 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sticky {
+    position: fixed;
+    /* Sticky for other sections */
+    background-color: white;
+    box-shadow: 0 1PX 1px rgba(59, 59, 59, 0.1);/
+}
+
+main {
+    transition: all 0.3s ease-in-out;
+}
+
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* navbar list */
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.main-nav-item:link,
+.main-nav-item:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.main-nav-item:hover,
+.main-nav-item:active {
+    color: #cf711f;
+}
+
+/* Orange Colored Link */
+
+.main-nav-item.nav-cta:link,
+.main-nav-item.nav-cta:visited {
+    padding: 0.7rem 1.5rem;
+    border-radius: 9px;
+    color: #fff !important;
+    background-color: #e67e22;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.5);
+}
+
+/* Simple button */
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 2.2rem;
+    border-radius: 9px;
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #cf711f;
+}
+
+/* Outline Button class */
+
+.btn-outline:link,
+.btn-outline:visited {
+    background-color: white;
+    color: #4d4d4d;
+    border: 3px solid white;
+    margin-left: 20px;
+}
+
+.btn-outline:hover {
+    background-color: #fdf2e9;
+}
+
+.margin-right-sm {
+    margin-right: 0.5rem !important;
+}
+
+/* MOBILE VIEW FOR COLLAPSIBLE NAVBAR */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mob-nav {
+    height: 3rem;
+    width: 3rem;
+    color: #333;
+}
+
+.icon-mob-nav[name="close-outline"] {
+    display: none;
+}
+
+/* SECTION --  1 (HOME SECTION) */
+
+.section-home {
+    background-color: #fdf2e9;
+    padding: 3rem 0 6rem 0;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 81.25rem;
+    gap: 6rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.home-description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 3.2rem;
+}
+
+.home-text-box {
+    margin: 10px;
+}
+
+.home-img {
+    width: 100%;
+}
+
+.delivered-cust {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.customer-imgs {
+    display: flex;
+}
+
+.customer-imgs img {
+    border: 3px solid whitesmoke;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-right: -12px;
+}
+
+/* SECTION - FEATURES */
+
+.section-features {
+    padding: 3rem 0 2rem 0;
+    background-color: white;
+}
+
+.container {
+    max-width: 75rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    color: #484848;
+    margin: 1.5rem 0;
+    opacity: 0.6;
+}
+
+.logos {
+    display: flex;
+    padding: 0 3rem;
+    justify-content: space-between;
+}
+
+.logos img {
+    height: 2rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+/* SECTION HOW */
+
+.section-how {
+    padding: 6rem 0;
+    background-color: white;
+}
+
+.step-img-box {
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    z-index: 10;
+}
+
+/* cCircles for Effect behind the Mobile screen photo. */
+.circle-1 {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+    width: 230px;
+    height: 230px;
+    background-color: #eed3bb;
+}
+
+.circle-2 {
+    z-index: 6;
+    position: absolute;
+    border-radius: 50%;
+    width: 330px;
+    height: 330px;
+    background-color: #fdf2e9;
+}
+
+.step-number {
+    color: #ddd;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.step-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* SECTION MEALS */
+
+.section-meals {
+    padding: 6rem 0;
+    background-color: white;
+}
+
+.meals {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.meals:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meals img {
+    width: 100%;
+}
+
+.meals-content {
+    padding: 2rem 3rem 3rem 3rem;
+}
+
+.tags {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.meals-tags {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.tags-vegeterian {
+    background-color: #51cf66;
+}
+
+.tags-paled {
+    background-color: #ffd43b;
+}
+
+.tags-vegan {
+    background-color: #94d82d;
+}
+
+.meals-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.attr-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.meal-attributes {
+    font-size: 1.1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.meal-icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    color: #e67e22;
+}
+
+.diets-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.diets li {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1.2;
+}
+
+.list-icon {
+    height: 1.87rem;
+    width: 1.87rem;
+    color: #cf711f;
+}
+
+/* See all link Properties */
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
+/* SECTION TESTIMONIALS */
+
+.section-testi {
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.testi-container {
+    padding: 5rem;
+    padding-top: 2rem;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+    column-gap: 5rem;
+    align-items: center;
+    /* margin-top: 5rem; */
+}
+
+.testimonials-img {
+    border-radius: 50%;
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.1rem;
+}
+
+.testimonials-name {
+    font-size: 1rem;
+    color: #767373;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* SECTOIN PRICING */
+
+.section-pricing {
+    background-color: white;
+    padding: 6rem 0
+}
+
+.pricing-plan {
+    width: 75%;
+    border-radius: 11px;
+}
+
+.p-start {
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 2.8rem;
+}
+
+.p-end {
+    background-color: #fdf2e9;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BEST VALUE BENNAR ON CARD */
+.p-end::after {
+    content: "Best value";
+    position: absolute;
+    top: 6%;
+    right: -18%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.6rem 5rem;
+    transform: rotate(45deg);
+}
+
+.p-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pricing-header {
+    margin-bottom: 5rem;
+}
+
+.p-name {
+    color: #cf711f;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.p-price {
+    color: #333;
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.p-price span {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.p-text {
+    color: #6f6f6f;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.plan-sing-up {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.list-content {
+    text-align: center;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list-item {
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: 1.2;
+    ;
+}
+
+.plan-details {
+    margin: 5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Features of Pricing */
+
+.feature {
+    /* padding: 0.1rem; */
+    margin: 1rem 0.5rem;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    color: #252525;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.feature-text {
+    font-size: 1.1rem;
+    color: #555555;
+    line-height: 1.7;
+}
+
+.feature-icon {
+    color: #e67e22;
+    height: 2rem;
+    width: 2rem;
+    background-color: #fdf2e9;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+/* SECTION CTA */
+
+.section-cta {
+    padding: 3rem 0 7rem 0;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    overflow: hidden;
+}
+
+.cta-text-box {
+    padding: 3rem 4rem 4rem 4rem;
+    color: #45260a;
+}
+
+.cta-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.cta .heading-secondary {
+    color: inherit;
+    margin-bottom: 2.2rem;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url(../images/eating.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+}
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+    color: #aaa;
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.5rem rgba(253, 242, 233, 0.5);
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    padding-block-start: 0px;
+    padding-block-end: 1px;
+    min-block-size: 1.2em;
+    padding-inline: 2px;
+    white-space: nowrap;
+}
+
+.btn-form {
+    background-color: #703f13;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 0.8rem;
+}
+
+.btn-form:hover {
+    background-color: white;
+    color: rgb(74, 72, 72);
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 6rem;
+    margin-bottom: 0 1rem 0 2rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-logo {
+    /* display: block; */
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
+}
+
+.cright {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+}
+
+.foot-heading {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
