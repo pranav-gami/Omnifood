@@ -347,7 +347,7 @@ li a {
 /* SECTION HOW */
 
 .section-how {
-    padding: 6rem 0;
+    padding: 6rem 0 4rem;
     background-color: white;
 }
 
@@ -357,7 +357,6 @@ li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35%;
     z-index: 10;
 }
 
@@ -390,6 +389,11 @@ li a {
 .step-description {
     font-size: 1.1rem;
     line-height: 1.7;
+}
+.step-img-box img{
+    height: 35%;
+    width: 35%;
+    z-index: 10;
 }
 
 /* SECTION MEALS */
