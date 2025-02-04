@@ -229,8 +229,8 @@ li a {
 .btn-outline:visited {
     background-color: white;
     color: #4d4d4d;
-    border: 3px solid white;
-    margin-left: 20px;
+    border: 2px solid white;
+    /* margin-left: 20px; */
 }
 
 .btn-outline:hover {
@@ -285,6 +285,13 @@ li a {
 
 .home-text-box {
     margin: 10px;
+}
+.home_btn-links{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
 }
 
 .home-img {

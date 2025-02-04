@@ -248,3 +248,12 @@
         grid-row: 1;
     }
 }
+
+/* BREAK-POINT FOR 24EM */
+
+@media (max-width:24em) {
+ 
+    .home_btn-links{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
